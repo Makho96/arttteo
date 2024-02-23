@@ -1,5 +1,5 @@
 .bouncing-text{
-  font-size: 16px;
+  font-size: 88px;
   line-height: 2em;
   overflow: hidden;
   span{
@@ -28,7 +28,7 @@
 @keyframes bounce {
   0%   { transform: scale(1,1)    translateY(0); }
   10%  { transform: scale(1.1,.9) translateY(0); }
-  30%  { transform: scale(.9,1.1) translateY(-10px); }
+  30%  { transform: scale(.9,1.1) translateY(-0.5em); }
   50%  { transform: scale(1,1)    translateY(0); }
   100% { transform: scale(1,1)    translateY(0); }
 }

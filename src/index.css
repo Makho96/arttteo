@@ -25,3 +25,7 @@ ul {
 a {
   text-decoration: none;
 }
+
+.slick-list{
+  overflow: visible!important;
+}

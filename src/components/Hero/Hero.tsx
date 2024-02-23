@@ -4,6 +4,8 @@ import './style.css'
 import Button from '../Shared/Button';
 import { useTypingText } from '../../helpers/useTyping';
 import { useEffect, useState } from 'react';
+import Bouncer from '../Shared/Bouncer';
+import SimpleSlider from '../Slider';
 
 const Hero = () => {
   const [active, setActive] = useState(false)
@@ -28,11 +30,14 @@ const Hero = () => {
           <img src={CluchSRC} alt='cluch-logo'/>
         </div>
         <h1>
-          <span>Need</span>
+          <span><Bouncer text='Need' /></span>
           <span className='changable-text'>{word}</span>
         </h1>
         <div className='button-container'>
           <Button text='talk to us' style={{background:'white'}} withBorder={false}/>
+        </div>
+        <div className='slider-container'>
+          <SimpleSlider />
         </div>
       </div>
     </div>
