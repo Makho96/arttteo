@@ -1,59 +1,66 @@
 nav {
-  .navigation-ul {
-    display: flex;
-    list-style-type: none;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    gap: 2em;
-    .navigation-li {
-      .nav-tiem-container{
-        font-size: 1em;
-        position: relative;
-        a {
-          display: inline-block;
-          font-weight: 600;
-          color: #2A3342;
-          padding: 0.25em 0.5em;
-        }
-        .submenu{
-          display: grid;
-          grid-template-rows: 0fr;
-          transition: grid-template-rows 500ms, width 500ms linear 500ms, padding 500ms;
-          position: absolute;
-          background-color: red;
-          left: 50%;
-          translate: -50%;
-          background: white;
-          top: 25px;
-          width: 0;
-          padding: 0;
-          border-radius: 20px;
-          background: #fff;
-          box-shadow: 0px 10px 20px 0px rgba(12, 15, 48, 0.05);
-          transform-origin: top center;
-          overflow: hidden;
-          ul {
-            padding: 0;
-            padding-top: 10px;
-            overflow: hidden;
-            li {
-              text-wrap: nowrap;
-              font-size: 1em;
-              padding: 0.75em 0;
-              font-weight: 600;
-              color: #2A3342;
-            }
-          }
-        }
-        &:hover {
-          .submenu {
-            padding: 10px;
-            grid-template-rows: 1fr;
-            width: 200px
-          };
-        }
-      }
-    }
-  }
+}
+
+.navigation-ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  gap: 2em;  
+}
+
+.navigation-li {
+  
+}
+
+.nav-tiem-container{
+  font-size: 1em;
+  position: relative;
+}
+
+.nav-tiem-container a {
+  display: inline-block;
+  font-weight: 600;
+  color: #2A3342;
+  padding: 0.25em 0.5em;
+}
+
+.nav-tiem-container:hover .submenu{
+  padding: 10px;
+  grid-template-rows: 1fr;
+  width: 200px
+}
+
+.submenu{
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 500ms, width 500ms linear 500ms, padding 500ms;
+  position: absolute;
+  background-color: red;
+  left: 50%;
+  translate: -50%;
+  background: white;
+  top: 25px;
+  width: 0;
+  padding: 0;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0px 10px 20px 0px rgba(12, 15, 48, 0.05);
+  transform-origin: top center;
+  overflow: hidden;
+}
+
+.submenu ul {
+  padding: 0;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+.submenu ul li {
+  text-wrap: nowrap;
+  font-size: 1em;
+  padding: 0.75em 0;
+  font-weight: 600;
+  color: #2A3342;
 }
