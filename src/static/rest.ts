@@ -1,0 +1,1 @@
+export { ReactComponent as BackgroundSvg} from '../assets/background/union.svg';

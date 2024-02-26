@@ -1,4 +1,4 @@
-import { StarSVG } from '../../static';
+import { BackgroundSvg, StarSVG } from '../../static';
 import CluchSRC from '../../assets/brands/Cluch.png';
 import './style.css'
 import Button from '../Shared/Button';
@@ -23,6 +23,12 @@ const Hero = () => {
   }, [])
   return (
     <div className={`hero-container ${active ? 'active' : ''}`}>
+      <div className='background-container top'>
+        <BackgroundSvg />
+      </div>
+      <div className='background-container bottom'>
+        <BackgroundSvg />
+      </div>
       <div className='main-text'>
         <div className='cluch'>
           <StarSVG />
@@ -36,9 +42,9 @@ const Hero = () => {
         <div className='button-container'>
           <Button text='talk to us' style={{background:'white'}} withBorder={false}/>
         </div>
-        <div className='slider-container'>
-          <SimpleSlider />
-        </div>
+      </div>
+      <div className='slider-container'>
+        <SimpleSlider />
       </div>
     </div>
   )

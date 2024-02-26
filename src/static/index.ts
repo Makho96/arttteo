@@ -1,2 +1,3 @@
 export * from './logo';
-export * from './icons'
+export * from './icons';
+export * from './rest';
